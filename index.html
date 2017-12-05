@@ -58,10 +58,13 @@
 
     #card .front {
       background: red;
+      width:20%;
     }
 
-    #card .back {
+    #card .top {
       background: blue;
+      width:20%;
+      height:200px;
       -webkit-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
          -moz-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
            -o-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
@@ -69,10 +72,10 @@
     }
     #card .side {
       background: blue;
-      -webkit-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
-         -moz-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
-           -o-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
-              transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
+      -webkit-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
+         -moz-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
+           -o-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
+              transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
 
    }
 
@@ -81,36 +84,36 @@
 <body>
   <section class="container">
     <div id="card">
+      <figure class="front"><img src="img/AstroNeil.png" width="100%" height="100%"></figure>
+      <figure class="top">2</figure>
+      <figure class="side"><img src="img/AstroNeil.png" width="100%" height=100%""></figure>
+    </div>
+  </section>
+  <section class="container">
+    <div id="card">
       <figure class="front">1</figure>
-      <figure class="back">2</figure>
+      <figure class="top">2</figure>
       <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
-      <figure class="back">2</figure>
+      <figure class="top">2</figure>
       <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
-      <figure class="back">2</figure>
+      <figure class="top">2</figure>
       <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
-      <figure class="back">2</figure>
-      <figure class="side">3</figure>
-    </div>
-  </section>
-  <section class="container">
-    <div id="card">
-      <figure class="front">1</figure>
-      <figure class="back">2</figure>
+      <figure class="top">2</figure>
       <figure class="side">3</figure>
     </div>
   </section>
