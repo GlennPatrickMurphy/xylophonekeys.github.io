@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 
     .container {
-      width: 200px;
-      height: 260px;
+      width: 300px;
+      height: 360px;
       float: left;
       padding:5px;
       margin: 0 auto 40px;
@@ -57,12 +57,12 @@
     }
 
     #card .front {
-      background: red;
+      background: white;
       width:20%;
     }
 
     #card .top {
-      background: blue;
+      background: white;
       width:20%;
       height:200px;
       -webkit-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
@@ -71,52 +71,74 @@
               transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
     }
     #card .side {
-      background: blue;
-      -webkit-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
-         -moz-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
-           -o-transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
-              transform: translateZ(-100px) translateX( -30% ) rotateY( 90deg ) ;
+      background: white;
+      -webkit-transform: translateZ(-140px) translateX( -30% ) rotateY( 90deg ) ;
+         -moz-transform: translateZ(-140px) translateX( -30% ) rotateY( 90deg ) ;
+           -o-transform: translateZ(-140px) translateX( -30% ) rotateY( 90deg ) ;
+              transform: translateZ(-140px) translateX( -30% ) rotateY( 90deg ) ;
 
    }
 
 </style>
-
+<head>
+  <title> XylophoneKeys </title>
+</head>
 <body>
+  <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+<a href="https://github.com/GlennPatrickMurphy" target="_blank" class="w3-bar-item w3-button">Github</a>
+<a href="https://www.linkedin.com/in/glenn-murphy-56750167" target="_blank" class="w3-bar-item w3-button">LinkedIn</a>
+<a href="https://www.instagram.com/glenn.patrick4" target="_blank" class="w3-bar-item w3-button">Instagram</a>
+
+</div>
+<div>
+
+<input type="image" src="img/BookLogo.png" name="saveForm" class="btTxt submit" id="saveForm" width="80px" height="100px" padding-bottom="0px" onClick="w3_open()"/>
+</div>
   <section class="container">
     <div id="card">
       <figure class="front"><img src="img/AstroNeil.png" width="100%" height="100%"></figure>
-      <figure class="top">2</figure>
+      <figure class="top"></figure>
       <figure class="side"><img src="img/AstroNeil.png" width="100%" height=100%""></figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
-      <figure class="front">1</figure>
-      <figure class="top">2</figure>
-      <figure class="side">3</figure>
+      <figure class="front"><img src="img/CivilNiall.png" width="100%" height="90%"></figure>
+      <figure class="top"></figure>
+      <figure class="side"><img src="img/CivilNiall.png" width="100%" height="90%"></figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
-      <figure class="front">1</figure>
-      <figure class="top">2</figure>
-      <figure class="side">3</figure>
+      <figure class="front"><img src="img/EconomicsHenry.png" width="100%" height="80%"></figure>
+      <figure class="top"></figure>
+      <figure class="side"><img src="img/EconomicsHenry.png" width="100%" height="80%"></figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
-      <figure class="front">1</figure>
-      <figure class="top">2</figure>
-      <figure class="side">3</figure>
+      <figure class="front"><img src="img/SapiensYuval.png" width="100%" height="70%"></figure>
+      <figure class="top"></figure>
+      <figure class="side"><img src="img/SapiensYuval.png" width="100%" height="70%"></figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
-      <figure class="front">1</figure>
-      <figure class="top">2</figure>
-      <figure class="side">3</figure>
+      <figure class="front"><img src="img/ArchiveBox.png" width="100%" height="60%"></figure>
+      <figure class="top"></figure>
+      <figure class="side"><img src="img/ArchiveBox.png" width="100%" height="60%"></figure>
     </div>
   </section>
 
 </body>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 </html>
