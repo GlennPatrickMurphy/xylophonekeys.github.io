@@ -7,8 +7,8 @@
       width: 200px;
       height: 260px;
       float: left;
+      padding:5px;
       margin: 0 auto 40px;
-      border: 1px solid #CCC;
       -webkit-perspective: 800px;
          -moz-perspective: 800px;
            -o-perspective: 800px;
@@ -34,10 +34,10 @@
     }
 
     #card:hover {
-      -webkit-transform: translateX( -100% ) rotateY( -180deg );
-         -moz-transform: translateX( -100% ) rotateY( -180deg );
-           -o-transform: translateX( -100% ) rotateY( -180deg );
-              transform: translateX( -100% ) rotateY( -180deg );
+      -webkit-transform: translateX( -100% ) rotateY( -90deg );
+         -moz-transform: translateX( -100% ) rotateY( -90deg );
+           -o-transform: translateX( -100% ) rotateY( -90deg );
+              transform: translateX( -100% ) rotateY( -90deg );
     }
 
     #card figure {
@@ -62,11 +62,19 @@
 
     #card .back {
       background: blue;
-      -webkit-transform: rotateY( 180deg );
-         -moz-transform: rotateY( 180deg );
-           -o-transform: rotateY( 180deg );
-              transform: rotateY( 180deg );
+      -webkit-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
+         -moz-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
+           -o-transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
+              transform: translateZ(-100px) translateY(-50%) rotateX( 90deg );
     }
+    #card .side {
+      background: blue;
+      -webkit-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
+         -moz-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
+           -o-transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
+              transform: translateZ(-100px) translateX( 50% ) rotateY( 90deg ) ;
+
+   }
 
 </style>
 
@@ -75,30 +83,35 @@
     <div id="card">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
+      <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
+      <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
+      <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
+      <figure class="side">3</figure>
     </div>
   </section>
   <section class="container">
     <div id="card">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
+      <figure class="side">3</figure>
     </div>
   </section>
 
